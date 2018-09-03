@@ -1,0 +1,299 @@
+/*	
+**	Theme Name: Portfolio Multipurpose Theme
+**	Theme URL: http://www.marclosper.ml/Portfolio-Multipurpose-Theme.zip
+**	Author Name: Marc Losper
+**	Author URL: http://www.marclosper.ml
+**	Details: This theme was written by me with <3 from scratch. Built using Bootstrap v4 as a framework alongside modern HTML5 semantic markup combined with CSS3.
+**	Licence: Free to copy, download, edit or do anything you want with. It would be nice if you could leave the credits in :)
+**/
+
+
+/*************************************
+**																	**
+** CONTENTS													**
+** 00 GENERAL STYLES								**
+** 01 HOME SECTION									**
+** 02 NAVBAR STYLES									**
+** 03 PORTFOLIO SECION							**
+** 04 ABOUT STYLES									**
+** 05 EXPERIENCE SECION							**
+** 06 CONTACT SECION								**
+** 07 FOOTER SECTION STYLES					**
+**																	**
+** 99 RESPOSNIVE STYLES	TEMPLATE		**
+**																	**
+**************************************/
+
+/* 00 GENERAL STYLES 
+--------------------------------*/
+html {
+	font-size: 14px;
+}
+html, body {
+	height: 100%;
+}
+.row {
+	max-width: 1366px;
+}
+div.spacer {
+	height: 90px;
+}
+h5 {
+	color: initial;
+}
+a {
+	color: #1dcaf0;
+}
+a:hover {
+	color: #fff;
+}
+.social a i:focus, .social a i:hover {
+    color: #1dcaf0;
+}
+hr {
+	border-color: rgba(255, 255, 255, .7);
+}
+hr.spacer {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+}
+.mlFullScreen {
+	min-height: 100% !important;
+	width: 100%;
+	margin: 0;
+}
+.mlBgBlue {
+	background-color: #1dcaf0;
+}
+.mlTextBlue {
+	color: #1dcaf0;
+}
+.mlHeadingUnderline {
+	border: 3px solid #1dcaf0;
+	width: 100px;
+}
+body > div:nth-child(16) {
+	display: none;
+}
+
+#backToTop {
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	background-color: rgba(0, 140, 255, .4);
+	color: rgb(255, 255, 255);
+	font-size: 1rem;
+	padding: 1rem;
+	border-radius: 2px;
+}
+#backToTop:hover {
+	background-color: rgba(0, 140, 255, .7);
+}
+/* Really devices (Portrait phones, 400px and down) */
+@media (min-width: 576px) {
+	html {
+		font-size: 15px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+/* 01 HOME SECTION
+--------------------------------*/
+.headerSpacing {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+.homeImg {
+	height: 100vh;
+	background-image: url('../img/header-image.jpg');
+	background-size: cover;
+}
+.lead {
+	font-size: 1rem;
+}
+.social i {
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	color: #fff;
+	text-shadow: 1px 1px 4px #4c4c4c;
+}
+.social i:hover {
+	color: #1dcaf0;
+}
+.seeMore {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+}
+.seeMore .fa {
+	color: #fff;
+}
+/* Optional contact button - REMOVE COMMENTS FROM RESPONSIVE STYLE BELOW AND IN html > body > header > 
+.contactBtn {
+	position: absolute;
+	right: 1rem; 
+	top: 2rem;
+	color: #fff; ; 
+	border:1px solid #fff;
+	border-radius: 50%; 
+	width: 4rem; 
+	height: 4rem;
+	z-index: 1;
+	font-size: 2.5rem;
+}
+*/
+.logo-image {
+	max-width: 100%;
+	margin: auto;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.logo-image {
+	max-width: 70%;
+	}
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.logo-image {
+		max-width: 70%;
+	}
+		hr.spacer {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+	}
+
+	.social i {
+		font-size: 2rem;
+		padding: 0.5rem;
+		color: #fff;
+		text-shadow: 1px 1px 4px #4c4c4c;
+	}
+/*
+	.contactBtn {
+	top: initial;
+	right: 2rem;
+	bottom: 2rem;
+	color: #fff; ; 
+	border:1px solid #fff;
+	border-radius: 50%; 
+	width: 4rem; 
+	height: 4rem;
+	z-index: 1;
+	font-size: 2.5rem;
+	}
+*/
+}
+
+
+/* 02 NAVBAR STYLES
+--------------------------------*/
+#mainNav {
+	background-color: rgba(0,0,0,.7);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.nav-link {
+	border-bottom: 5px solid #fff;
+}
+.nav-link.active {
+	border-bottom: 5px solid #1dcaf0;
+}
+.top{
+	height: 100px;
+}
+
+/* 03 PORTFOLIO SECTION STYLES
+--------------------------------*/
+.portfolioImg {
+	background-image: url('../img/experience-image.jpg');
+	background-size: cover;
+}
+.portfolioImg .container {
+	height: 100vh;
+	width: 100%;
+}
+
+/* 04 ABOUT SECTION STYLES
+--------------------------------*/
+.aboutImg {
+	background-image: url('../img/about-image.jpg');
+	background-size: cover;
+	background-position: bottom right;
+}
+.avatar {
+	width: 100px;
+}
+.avatar img {
+	padding: .25rem;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	width: 100px;
+/*	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18); */
+}
+#aboutSection .fa {
+	margin-right: .5rem;
+}
+/* 05 EXPERIENCE SECTION STYLES
+--------------------------------*/
+#experienceSection a:hover {
+	color: initial;
+	text-decoration-color: #1dcaf0;
+}
+.experienceImg {
+	background-image: url('../img/experience-image.jpg');
+	background-size: cover;
+}
+.experienceImg .container {
+	width: 100%;
+}
+.jobContainer {
+	padding: 2.5rem 2rem;
+	background-color: rgba(20, 20, 20, .7);
+}
+
+/* 06 CONTACT SECTION STYLES
+--------------------------------*/
+.contactImg {
+	background-image: url('../img/contact-image.jpg');
+	background-size: cover;
+}
+.contactImg > .container {
+	width: 100%;
+	height: 100vh;
+}
+
+/* 07 FOOTER SECTION STYLES
+--------------------------------*/
+footer .social {
+	font-size: 2rem;
+	margin: 0.5rem 0.5rem 0;
+}
+
+
+
+/* 99 RESPOSNIVE STYLES TEMPLATE
+--------------------------------*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { html {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
